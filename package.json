@@ -1,0 +1,22 @@
+{
+  "name": "react-comfort",
+  "version": "1.0.0",
+  "description": "A modern React JS utility library delivering comfort, performance, modularity & extras.",
+  "license": "MIT",
+  "homepage": "https://github.com/Ruben-Arushanyan/react-comfort",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ruben-Arushanyan/react-comfort"
+  },
+  "bugs": "https://github.com/Ruben-Arushanyan/react-comfort/issues",
+  "keywords": [
+      "react-comfort",
+      "react",
+      "utility"
+  ],
+  "author": "Ruben Arushanyan <ruben.arushanyan24@gmail.com> (https://www.linkedin.com/in/ruben-arushanyan-42bba9235/)",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
