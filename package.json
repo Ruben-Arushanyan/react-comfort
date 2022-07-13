@@ -18,8 +18,5 @@
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"no test specified\" && exit 0"
-  },
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org"
   }
 }
