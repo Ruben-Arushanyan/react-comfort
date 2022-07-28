@@ -4,19 +4,46 @@
   "description": "A modern React JS utility library delivering comfort, performance, modularity & extras.",
   "license": "MIT",
   "homepage": "https://github.com/Ruben-Arushanyan/react-comfort",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/Ruben-Arushanyan/react-comfort"
   },
-  "bugs": "https://github.com/Ruben-Arushanyan/react-comfort/issues",
+  "bugs": {
+    "url": "https://github.com/Ruben-Arushanyan/react-comfort/issues",
+    "email": "ruben.arushanyan24@gmail.com"
+  },
   "keywords": [
     "react-comfort",
     "react",
     "utility"
   ],
-  "author": "Ruben Arushanyan <ruben.arushanyan24@gmail.com> (https://www.linkedin.com/in/ruben-arushanyan-42bba9235/)",
-  "main": "src/index.js",
+  "author": {
+    "name": "Ruben Arushanyan",
+    "email": "ruben.arushanyan24@gmail.com",
+    "url": "https://www.linkedin.com/in/ruben-arushanyan-42bba9235/"
+  },
+  "funding": {
+    "type": "individual",
+    "url": "https://github.com/sponsors/Ruben-Arushanyan"
+  },
   "scripts": {
-    "test": "echo \"no test specified\" && exit 0"
+    "build": "node scripts/build.js",
+    "test": "npm run to-pack --if-present; node scripts/test.js",
+    "to-pack": "npm run build --if-present; node scripts/to-pack.js",
+    "to-npm-publish": "npm run to-pack --if-present; node scripts/to-npm-publish.js"
+  },
+  "packableFiles": [
+    "package.json",
+    "README.md",
+    "LICENSE",
+    "dist/."
+  ],
+  "sideEffects": false,
+  "devDependencies": {
+    "@babel/cli": "^7.18.9",
+    "@babel/core": "^7.18.9",
+    "@babel/preset-env": "^7.18.9",
+    "@babel/preset-react": "^7.18.6"
   }
 }
