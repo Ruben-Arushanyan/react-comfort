@@ -1,5 +1,5 @@
 // components
-export {If, Else} from './components/if-else'
+export {If, Else, ElseIf} from './components/if-else'
 
 // hooks
 export {useThis} from './hooks/useThis'
