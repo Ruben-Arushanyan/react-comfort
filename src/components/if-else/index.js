@@ -1,20 +1,23 @@
-import React, {Children} from 'react'
+import React from 'react'
+import {ComponentChildren} from '../../services/ComponentChildren'
 
 const If = (props) => {
-    let {children, condition} = props
-    condition = !!condition
-    children = Children.toArray(children)
+    const {children, condition} = props
+    const _children = new ComponentChildren(children)
     if (condition) {
-        children = children.filter(node => (node.type !== Else) && (node.type !== ElseIf))
+        _children.removeByNodeTypes([Else, ElseIf])
     } else {
-        children = children.filter(node => (node.type === Else) || (node.type === ElseIf))
+        _children.removeExceptNodeTypes([Else, ElseIf])
     }
-    return children
+    _children.callFunctions()
+    return children.value
 }
 
 const Else = (props) => {
-    let {children} = props
-    return children
+    const {children} = props
+    const _children = new ComponentChildren(children)
+    _children.callFunctions()
+    return _children.value
 }
 
 const ElseIf = (props) => <If {...props} />
