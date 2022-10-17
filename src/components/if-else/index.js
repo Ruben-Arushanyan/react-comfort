@@ -10,7 +10,7 @@ const If = (props) => {
         _children.removeExceptNodeTypes([Else, ElseIf])
     }
     _children.callFunctions()
-    return children.value
+    return _children.value
 }
 
 const Else = (props) => {
