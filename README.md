@@ -14,8 +14,20 @@ npm install react-comfort
 
 ## Example
 
-```js
-...
+```jsx
+import {If, Else} from 'react-comfort'
+
+const Bar = () => {
+    return (
+        <If condition={age >= 18}>
+            Buy alcohol!
+
+            <Else>
+                Sorry, children cannot purchase alcohol!
+            </Else>
+        </If>
+    )
+}
 ```
 
 ## [Documentation](https://ruben-arushanyan.github.io/react-comfort)
