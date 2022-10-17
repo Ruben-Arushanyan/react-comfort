@@ -30,7 +30,7 @@ class ComponentChildren {
         this.#value = this.#value.filter(el => {
             const node = new ElementNode(el)
             const nodeType = node.getType()
-            return !types.include(nodeType)
+            return !types.includes(nodeType)
         })
     }
 
@@ -38,7 +38,7 @@ class ComponentChildren {
         this.#value = this.#value.filter(el => {
             const node = new ElementNode(el)
             const nodeType = node.getType()
-            return types.include(nodeType)
+            return types.includes(nodeType)
         })
     }
 }
