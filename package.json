@@ -1,7 +1,7 @@
 {
   "name": "react-comfort",
   "version": "0.0.3",
-  "description": "A modern React JS utility library delivering comfort, performance, modularity & extras.",
+  "description": "React Comfort is a React library that provides utilities for common programming tasks, that make coding in React easier and cleaner.",
   "license": "MIT",
   "homepage": "https://github.com/Ruben-Arushanyan/react-comfort",
   "main": "index.js",
@@ -14,9 +14,16 @@
     "email": "ruben.arushanyan24@gmail.com"
   },
   "keywords": [
-    "react-comfort",
     "react",
-    "utility"
+    "react-comfort",
+    "util",
+    "utils",
+    "utility",
+    "utilities",
+    "extras",
+    "helpers",
+    "stdlib",
+    "boost"
   ],
   "author": {
     "name": "Ruben Arushanyan",

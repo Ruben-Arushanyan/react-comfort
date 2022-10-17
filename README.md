@@ -1,5 +1,41 @@
-# React Comfort
+# [React Comfort](https://react-comfort.js.org)
+> You can find the full documentation on the [website](https://react-comfort.js.org)
 
-## Future package of something quite cool :))
+## Description
 
-If you are a visitor, check back soon.
+**React Comfort** is a React library that provides **utilities** for common programming tasks, that make coding in React **easier** and **cleaner**.
+
+
+## Installation
+
+```
+npm install react-comfort
+```
+
+## Example
+
+```js
+...
+```
+
+## [Documentation](https://react-comfort.js.org)
+
+- ### [Introduction](https://react-comfort.js.org/docs/introduction)
+
+</br>
+
+## [Contributing](https://github.com/ruben-arushanyan/react-comfort/blob/master/CONTRIBUTING.md)
+
+Read our [contributing guide](https://github.com/ruben-arushanyan/react-comfort/blob/master/CONTRIBUTING.md) to learn about our development process.
+
+## [Code of Conduct](https://github.com/ruben-arushanyan/react-comfort/blob/master/CODE_OF_CONDUCT.md)
+
+This project has adopted the [Contributor Covenant](https://www.contributor-covenant.org) as its Code of Conduct, and we expect project participants to adhere to it. Please read the [full text](https://github.com/ruben-arushanyan/react-comfort/blob/master/CODE_OF_CONDUCT.md) so that you can understand what actions will and will not be tolerated.
+
+## Authors
+
+- [Ruben Arushanyan](https://github.com/ruben-arushanyan)
+
+## License
+
+[MIT License](https://github.com/Ruben-Arushanyan/react-comfort/blob/master/LICENSE)
