@@ -1,5 +1,5 @@
-# [React Comfort](https://react-comfort.js.org)
-> You can find the full documentation on the [website](https://react-comfort.js.org)
+# [React Comfort](https://ruben-arushanyan.github.io/react-comfort)
+> You can find the full documentation on the [website](https://ruben-arushanyan.github.io/react-comfort)
 
 ## Description
 
@@ -18,9 +18,9 @@ npm install react-comfort
 ...
 ```
 
-## [Documentation](https://react-comfort.js.org)
+## [Documentation](https://ruben-arushanyan.github.io/react-comfort)
 
-- ### [Introduction](https://react-comfort.js.org/docs/introduction)
+- ### [Introduction](https://ruben-arushanyan.github.io/react-comfort/docs/introduction)
 
 </br>
 
