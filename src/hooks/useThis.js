@@ -1,29 +1,30 @@
 import {useRef} from 'react'
-import isObject from 'comfortable/isObject'
-import isFunction from 'comfortable/isFunction'
+import {isObject, isFunction, eq} from '../services/utils'
 import { useForceUpdate } from './useForceUpdate'
 import { useConstructor, useForceUpdate } from './useConstructor'
 
 const useThis = (initialThis) => {
     const forceUpdate = useForceUpdate()
-    const {current: _this} = useRef({})
+    const ref = useRef({})
 
     useConstructor(() => {
         const setState = (value) => {
-            const newState = isFunction(value) ? value(_this.state) : value
-            if (![newState].includes(_this.state)) { // TODO change eq()
-                _this.state = newState
+            const newState = isFunction(value) ? value(ref.current.state) : value
+            if (!eq(newState, ref.current.state)) {
+                ref.current.state = newState
                 forceUpdate()
             }
         }
-        _this.forceUpdate = forceUpdate
-        _this.setState = setState
-        _this.state = undefined
 
+        ref.current.state = undefined
         if (isObject(initialThis)) {
-            // TODO in progress
+            ref.current = {...ref.current, ...initialThis}
         }
+        ref.current.forceUpdate = forceUpdate
+        ref.current.setState = setState
     })
 
-    return _this
+    return ref.current
 }
+
+export {useThis}
