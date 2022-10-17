@@ -1,7 +1,7 @@
 import {useRef} from 'react'
 import {isObject, isFunction, eq} from '../services/utils'
 import { useForceUpdate } from './useForceUpdate'
-import { useConstructor, useForceUpdate } from './useConstructor'
+import { useConstructor } from './useConstructor'
 
 const useThis = (initialThis) => {
     const forceUpdate = useForceUpdate()
