@@ -42,7 +42,7 @@ More complex example using `If`, `Else`, and `ElseIf` combination.
 ```jsx
 import {If, Else, ElseIf} from 'react-comfort'
 
-const Bar = (props) => {
+const App = (props) => {
     return (
         <If condition={props.condition_1}>
             <p>Show, if cond_1 is true</p>
@@ -61,4 +61,18 @@ const Bar = (props) => {
         </If>
     )
 }
+```
+
+Example for **nested** `If`-`Else` combination.
+
+```jsx
+<If condition={condition_1}>
+    <Else condition={condition_2}>
+        <If condition={condition_3}>
+            <Else condition={condition_4}>
+                Hello!
+            </Else>
+        </If>
+    </Else>
+</If>
 ```
