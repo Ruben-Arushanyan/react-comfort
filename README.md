@@ -1,5 +1,5 @@
-# [React Comfort](https://ruben-arushanyan.github.io/react-comfort)
-> You can find the full documentation on the [website](https://ruben-arushanyan.github.io/react-comfort)
+# [React Comfort](https://react-comfort.js.org)
+> You can find the full documentation on the [website](https://react-comfort.js.org)
 
 ## Description
 
@@ -32,11 +32,11 @@ const Bar = (props) => {
 }
 ```
 
-## [Documentation](https://ruben-arushanyan.github.io/react-comfort)
+## [Documentation](https://react-comfort.js.org)
 
-- ### [Introduction](https://ruben-arushanyan.github.io/react-comfort/docs/introduction)
+- ### [Introduction](https://react-comfort.js.org/docs/introduction)
 - ### Components
-    - [If-Else](https://ruben-arushanyan.github.io/react-comfort/docs/components/if-else)
+    - [If-Else](https://react-comfort.js.org/docs/components/if-else)
 
 </br>
 

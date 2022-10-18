@@ -17,8 +17,8 @@ const additonalInfo = {
 const config = {
   title: 'React Comfort',
   tagline: 'Feel more comfortable in React',
-  url: 'https://ruben-arushanyan.github.io',
-  baseUrl: '/react-comfort/',
+  url: 'https://react-comfort.js.org',
+  baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'images/favicon.ico',

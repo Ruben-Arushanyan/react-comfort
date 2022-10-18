@@ -3,7 +3,7 @@
   "version": "2.0.3",
   "description": "React Comfort is a React library that provides utilities for common programming tasks, that make coding in React easier and cleaner.",
   "license": "MIT",
-  "homepage": "https://ruben-arushanyan.github.io/react-comfort",
+  "homepage": "https://react-comfort.js.org",
   "main": "index.js",
   "repository": {
     "type": "git",
