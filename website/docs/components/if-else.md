@@ -108,3 +108,22 @@ Let's solve that problem․
     </Else>
 </If>
 ```
+
+## API
+
+### `<If>`
+
+|Property|Type|Default|Description|
+| ------ |------| ---- | ---- |
+|`condition`|`<Any>`| `false` | If condition evaluates to `true`, the children of `If` will render except for the `Else` and `ElseIf` blocks. If condition evaluates to `false`, only the `Else` and `ElseIf` children of `If` will be rendered. |
+
+
+### `<Else>`
+
+No props!
+
+### `<ElseIf>`
+
+|Property|Type|Default|Description|
+| ------ |------| ---- | ---- |
+|`condition`|`<Any>`| `false` | If condition evaluates to `true`, the children of `ElseIf` will render except for the `Else` and `ElseIf` blocks. If condition evaluates to `false`, only the `Else` and `ElseIf` children of `ElseIf` will be rendered. |
