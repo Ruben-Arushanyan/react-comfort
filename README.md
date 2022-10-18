@@ -17,13 +17,15 @@ npm install react-comfort
 ```jsx
 import {If, Else} from 'react-comfort'
 
-const Bar = () => {
+const Bar = (props) => {
     return (
-        <If condition={age >= 18}>
-            Buy alcohol!
+        <If condition={props.age >= 18}>
+            <h2>🍺🍺🍺</h2>
+            <p>Buy alcohol!</p>
 
             <Else>
-                Sorry, children cannot purchase alcohol!
+                <h2>🚫🚫🚫</h2>
+                <p>Sorry, children cannot purchase alcohol!</p>
             </Else>
         </If>
     )
@@ -33,6 +35,8 @@ const Bar = () => {
 ## [Documentation](https://ruben-arushanyan.github.io/react-comfort)
 
 - ### [Introduction](https://ruben-arushanyan.github.io/react-comfort/docs/introduction)
+- ### Components
+    - [If-Else](https://ruben-arushanyan.github.io/react-comfort/docs/components/if-else)
 
 </br>
 
