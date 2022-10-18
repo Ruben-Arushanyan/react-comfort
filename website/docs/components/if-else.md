@@ -15,7 +15,7 @@ keywords: ['react', 'if-else', 'react-if', 'conditional-rendering', 'react-comfo
 import {If, Else, ElseIf} from 'react-comfort'
 ```
 
-## Example
+## Examples
 
 Simple example using `If` and `Else` combination.
 
@@ -73,6 +73,38 @@ Example for **nested** `If`-`Else` combination.
                 Hello!
             </Else>
         </If>
+    </Else>
+</If>
+```
+
+## Function Children
+
+Regardless of the condition, both the children of `If` and `Else` will be executed by JavaScript․ This can lead to unwanted side effects and performance issues. In such cases, we can pass a **function instead of children**.
+
+Let's consider the following example:
+
+```jsx
+<If condition={hasResult}>
+
+    <p>Result: { getResult() }</p>
+
+    <Else>
+        <p>No Result</p>
+    </Else>
+</If>
+```
+
+In the example above, the `getResult()` function will always be called regardless of whether `hasResult` is **true** or **false**.
+
+Let's solve that problem․
+
+
+```jsx
+<If condition={hasResult}>
+    {() => <p>Result: { getResult() }</p>}
+    
+    <Else>
+        <p>No Result</p>
     </Else>
 </If>
 ```
