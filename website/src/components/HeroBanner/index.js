@@ -19,9 +19,9 @@ export default function HeroBanner() {
           <img
             alt='logo'
             className={styles.heroLogo}
-            src={useBaseUrl('/images/300x300.png')}
-            width="300"
-            height="300"
+            src={useBaseUrl('/images/1200x1200.png')}
+            width="350"
+            height="350"
           />
         </h1>
         <h2 className={styles.heroProjectTagline}>

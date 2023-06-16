@@ -65,7 +65,7 @@
   animation-duration: 2s;
   animation-name: jack-in-the-box;
   float: right;
-  margin-top: 20px;
+  margin-top: -20px;
   padding: 0 20px 20px 40px;
   height: auto;
 }
